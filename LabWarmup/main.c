@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <math.h>
 
-int main(void) {
-   int userNum;
-   int userNum2;
-   
-   printf("Enter integer:\n");
-   scanf("%d", &userNum);
-   printf("Your entered: %d\n", userNum);
-   printf("%d squared is %d\n", userNum, userNum * userNum);
-   printf("And %d cubed is %d!!\n", userNum, userNum * userNum * userNum);
-   printf("Enter another integer:\n");
-   scanf("%d", &userNum2);
-   printf("%d + %d is %d\n", userNum, userNum2, userNum2 + userNum);
-   printf("%d * %d is %d\n", userNum, userNum2, userNum2 * userNum);
+int main() {
 
-   return 0;
+int num_1, num_2;
+
+    printf("Enter an integer:\n");
+    scanf("%d", &num_1);
+    printf("%d squared is %d\n", num_1, num_1 * num_1);
+    printf("And %d cubed is %d\n", num_1, num_1 * num_1 * num_1);
+
+    printf("\n");
+
+    printf("Enter another integer:\n");
+    scanf("%d", &num_2);
+    printf("%d + %d = %d\n", num_1, num_2, num_1 + num_2);
+    printf("%d * %d = %d\n", num_1, num_2, num_1 * num_2);
+
 }
